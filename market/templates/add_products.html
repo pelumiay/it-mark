@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{% block title %}
+Register Page
+{% endblock %}
+
+{% block content %}
+<body class="text-center">
+    
+    <div class="container">
+        <form method="POST" class="form-register" style="color:white">
+            {{form.hidden_tag()}}
+            <img class="mb-4" src="https://image.shutterstock.com/image-vector/trolley-cart-icon-vector-logo-260nw-1009988791.jpg" alt="">
+            <h1 class="h3 mb-3 font-weight-normal">
+                Please add your Item
+            </h1>
+            <br>
+            {{ form.name.label() }}
+            {{ form.name(class="form-control", placeholder=" Item Name") }}
+
+            {{ form.price.label() }}
+            {{ form.price(class="form-control", placeholder="Price") }}
+
+            {{ form.barcode.label() }}
+            {{ form.barcode(class="form-control", placeholder="Barcode") }}
+
+            {{ form.description.label() }}
+            {{ form.description(class="form-control", placeholder="Description") }}
+            
+            <br>
+            {{form.submit(class="btn btn-lg btn-block btn-primary")}}
+        </form>
+
+    </div>
+
+</body>   
+{% endblock %}
