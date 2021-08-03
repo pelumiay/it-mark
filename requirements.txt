@@ -9,3 +9,4 @@ WTForms==2.3.3
 gunicorn
 pyOpenSSL
 Werkzeug==0.16.0
+email_validators
