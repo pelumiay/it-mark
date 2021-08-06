@@ -46,8 +46,8 @@ def market_page():
                     'quantity': 1,
                     }],
                     mode='payment',
-                    success_url='http://localhost:5000/success',
-                    cancel_url='https://example.com/cancel',
+                    success_url='https://it-mark.herokuapp.com/success',
+                    cancel_url='https://it-mark.herokuapp.com/failure',
                 )
                 flash(f"Congratulations! You purchased {p_item_object.name} for {p_item_object.price}$", category='success')
 
