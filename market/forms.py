@@ -37,7 +37,7 @@ class addproductForm(FlaskForm):
 
 class LoginForm(FlaskForm):
     username = StringField(label='User Name:', validators=[DataRequired()])
-    password = StringField(label='Password:', validators=[DataRequired()])
+    password = Password(label='Password:', validators=[DataRequired()])
     submit = SubmitField(label='Sign in')
 
 class PurchaseItemForm(FlaskForm):
